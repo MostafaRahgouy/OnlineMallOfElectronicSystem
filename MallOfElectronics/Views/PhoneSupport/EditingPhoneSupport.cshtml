@@ -1,0 +1,46 @@
+﻿@model MallOfElectronics.Models.DataBase.PhoneSupport
+
+@{
+    ViewBag.Title = "Editing Phone Support";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="blue-color-text">Editing Phone Support</h2>
+<h2 style="color:green"> @ViewBag.message</h2>
+<h2 style="color:red"> @ViewBag.ErrorMessage</h2>
+
+@using (Html.BeginForm()) {
+    @*@Html.AntiForgeryToken()*@
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>PhoneSupport</legend>
+
+        @Html.HiddenFor(model => model.id)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CompanyId)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CompanyId)
+            @Html.ValidationMessageFor(model => model.CompanyId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.PhoneSupport1)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.PhoneSupport1)
+            @Html.ValidationMessageFor(model => model.PhoneSupport1)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" style="color: white; background-color: #186fb1; font-size: 20px; width: 150px; height: 50px;" />
+            <b>@Html.ActionLink("Back to List", "ListOfPhoneSupport", "PhoneSupport", new { style = "font-size:20px;" })</b>
+        </p>
+    </fieldset>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

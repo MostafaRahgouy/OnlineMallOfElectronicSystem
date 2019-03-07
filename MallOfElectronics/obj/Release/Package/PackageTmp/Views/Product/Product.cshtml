@@ -1,0 +1,45 @@
+﻿<link href="~/Content/Site.css" rel="stylesheet" />
+<link href="~/Content/themes/SliderTheme/js-image-slider.css" rel="stylesheet" />
+@{
+    ViewBag.Title = ViewBag.titleLink;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    MallOfElectronics.Models.Repository.ProductsRepository product = new MallOfElectronics.Models.Repository.ProductsRepository();
+    List<MallOfElectronics.Models.DataBase.Product> products = new List<MallOfElectronics.Models.DataBase.Product>();
+    products = product.select().ToList();
+    MallOfElectronics.Models.Repository.CompanyRepository company = new MallOfElectronics.Models.Repository.CompanyRepository();
+}
+<div class="products-title-products-page">
+    @{
+        string titleLink = @ViewBag.titleLink;
+        <b>@Html.ActionLink(titleLink, "Product", "Product", new { productType = ViewBag.productType, titleLink = titleLink }, new { style = "text-decoration:none; color:black; font-size:large; font:bold;" })</b>
+    }
+</div>
+
+<table>
+    @for (int item = 0; item < products.Count; )
+    {
+        <tr>
+            @for (int i = 1 ; (i <= 4) && (item < products.Count); item++)
+            {
+                if (products[item].ProductType == @ViewBag.productType)
+                {
+                    <td id="sliderFrame" style="border: 1px solid #b3a2a2;">
+                        <b>
+                            @{
+                       string productsFullName = @company.Find(products[item].CompanyId).Name + " "
+                                              + @products[item].Name + " "
+                                              + @products[item].Price + " $";
+                            }
+                            <img src="~/@products[item].Image" width="200" height="150" />
+
+                            @Html.ActionLink(productsFullName, "DisplayProductDetails", "Product",
+                                  new { productId = products[item].Id },
+                                     new { style = "text-decoration:none; background-color:transparent;" })
+                        </b>
+                    </td>
+                    i++;
+                }
+            }
+        </tr>
+    }
+</table>

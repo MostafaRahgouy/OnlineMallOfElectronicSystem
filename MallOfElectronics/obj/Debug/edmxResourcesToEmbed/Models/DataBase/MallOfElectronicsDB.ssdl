@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MallOfElectronicsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="BankCard">
+    <Key>
+      <PropertyRef Name="CardNumber" />
+    </Key>
+    <Property Name="CardNumber" Type="bigint" Nullable="false" />
+    <Property Name="Cvv2" Type="int" Nullable="false" />
+    <Property Name="month" Type="int" Nullable="false" />
+    <Property Name="day" Type="int" Nullable="false" />
+    <Property Name="SecondPassword" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Buy">
+    <Key>
+      <PropertyRef Name="TrackingCode" />
+    </Key>
+    <Property Name="TrackingCode" Type="bigint" Nullable="false" />
+    <Property Name="Day" Type="int" Nullable="false" />
+    <Property Name="Month" Type="int" Nullable="false" />
+    <Property Name="Year" Type="int" Nullable="false" />
+    <Property Name="CustomerID" Type="bigint" Nullable="false" />
+    <Property Name="CardNumber" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BuyTheProduct">
+    <Key>
+      <PropertyRef Name="ProductId" />
+      <PropertyRef Name="TrackingCode" />
+    </Key>
+    <Property Name="ProductId" Type="bigint" Nullable="false" />
+    <Property Name="TrackingCode" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CategoriesEntities">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ParentId" Type="bigint" />
+  </EntityType>
+  <EntityType Name="CategoriesFeatures">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ParentId" Type="bigint" />
+  </EntityType>
+  <EntityType Name="Company">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="CompanyType" Type="int" Nullable="false" />
+    <Property Name="CompanyIDCategories" Type="bigint" Nullable="false" />
+    <Property Name="Description" Type="ntext" />
+  </EntityType>
+  <EntityType Name="CompanyCategory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ParentId" Type="bigint" />
+  </EntityType>
+  <EntityType Name="Person">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Sex" Type="bit" />
+    <Property Name="RegisteryDate" Type="date" />
+    <Property Name="IdOfTheCategoryOfPersons" Type="bigint" Nullable="false" />
+    <Property Name="Image" Type="nvarchar" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="PhoneSupport">
+    <Key>
+      <PropertyRef Name="CompanyId" />
+      <PropertyRef Name="PhoneSupport" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CompanyId" Type="bigint" Nullable="false" />
+    <Property Name="PhoneSupport" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Price" Type="int" Nullable="false" />
+    <Property Name="Color" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Count" Type="int" Nullable="false" />
+    <Property Name="CompanyId" Type="bigint" Nullable="false" />
+    <Property Name="ProductIDCategories" Type="bigint" Nullable="false" />
+    <Property Name="Weight" Type="float" Nullable="false" />
+    <Property Name="ProductType" Type="int" Nullable="false" />
+    <Property Name="ScreenSize" Type="float" />
+    <Property Name="MemorySize" Type="float" />
+    <Property Name="Brand" Type="nvarchar" MaxLength="50" />
+    <Property Name="PrecisionCamera" Type="float" />
+    <Property Name="IdOfCategoryFeatures" Type="bigint" />
+    <Property Name="Image" Type="nvarchar" MaxLength="500" />
+    <Property Name="Description" Type="ntext" />
+  </EntityType>
+  <EntityType Name="ProductCategory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ParentId" Type="bigint" />
+  </EntityType>
+  <Association Name="FK_Buy_BankCard">
+    <End Role="BankCard" Type="Self.BankCard" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Buy" Type="Self.Buy" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BankCard">
+        <PropertyRef Name="CardNumber" />
+      </Principal>
+      <Dependent Role="Buy">
+        <PropertyRef Name="CardNumber" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Buy_Person">
+    <End Role="Person" Type="Self.Person" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Buy" Type="Self.Buy" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Person">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Buy">
+        <PropertyRef Name="CustomerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BuyTheProduct_Buy">
+    <End Role="Buy" Type="Self.Buy" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="BuyTheProduct" Type="Self.BuyTheProduct" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Buy">
+        <PropertyRef Name="TrackingCode" />
+      </Principal>
+      <Dependent Role="BuyTheProduct">
+        <PropertyRef Name="TrackingCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BuyTheProduct_Product">
+    <End Role="Product" Type="Self.Product" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="BuyTheProduct" Type="Self.BuyTheProduct" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BuyTheProduct">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CategoriesEntities_CategoriesEntities">
+    <End Role="CategoriesEntities" Type="Self.CategoriesEntities" Multiplicity="0..1" />
+    <End Role="CategoriesEntities1" Type="Self.CategoriesEntities" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CategoriesEntities">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CategoriesEntities1">
+        <PropertyRef Name="ParentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CategoriesFeatures_CategoriesFeatures1">
+    <End Role="CategoriesFeatures" Type="Self.CategoriesFeatures" Multiplicity="0..1" />
+    <End Role="CategoriesFeatures1" Type="Self.CategoriesFeatures" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CategoriesFeatures">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CategoriesFeatures1">
+        <PropertyRef Name="ParentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Company_CompanyCategory">
+    <End Role="CompanyCategory" Type="Self.CompanyCategory" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Company" Type="Self.Company" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CompanyCategory">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Company">
+        <PropertyRef Name="CompanyIDCategories" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CompanyCategory_CompanyCategory">
+    <End Role="CompanyCategory" Type="Self.CompanyCategory" Multiplicity="0..1" />
+    <End Role="CompanyCategory1" Type="Self.CompanyCategory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CompanyCategory">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CompanyCategory1">
+        <PropertyRef Name="ParentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Person_CategoriesEntities">
+    <End Role="CategoriesEntities" Type="Self.CategoriesEntities" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Person" Type="Self.Person" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CategoriesEntities">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Person">
+        <PropertyRef Name="IdOfTheCategoryOfPersons" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PhoneSupport_Company">
+    <End Role="Company" Type="Self.Company" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PhoneSupport" Type="Self.PhoneSupport" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PhoneSupport">
+        <PropertyRef Name="CompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product_CategoriesFeatures">
+    <End Role="CategoriesFeatures" Type="Self.CategoriesFeatures" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Product" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CategoriesFeatures">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="IdOfCategoryFeatures" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product_Company">
+    <End Role="Company" Type="Self.Company" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Product" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="CompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product_ProductCategory">
+    <End Role="ProductCategory" Type="Self.ProductCategory" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Product" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductCategory">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="ProductIDCategories" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductCategory_ProductCategory">
+    <End Role="ProductCategory" Type="Self.ProductCategory" Multiplicity="0..1" />
+    <End Role="ProductCategory1" Type="Self.ProductCategory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductCategory">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProductCategory1">
+        <PropertyRef Name="ParentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MallOfElectronicsModelStoreContainer">
+    <EntitySet Name="BankCard" EntityType="Self.BankCard" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Buy" EntityType="Self.Buy" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BuyTheProduct" EntityType="Self.BuyTheProduct" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CategoriesEntities" EntityType="Self.CategoriesEntities" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CategoriesFeatures" EntityType="Self.CategoriesFeatures" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Company" EntityType="Self.Company" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CompanyCategory" EntityType="Self.CompanyCategory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Person" EntityType="Self.Person" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PhoneSupport" EntityType="Self.PhoneSupport" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProductCategory" EntityType="Self.ProductCategory" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Buy_BankCard" Association="Self.FK_Buy_BankCard">
+      <End Role="BankCard" EntitySet="BankCard" />
+      <End Role="Buy" EntitySet="Buy" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Buy_Person" Association="Self.FK_Buy_Person">
+      <End Role="Person" EntitySet="Person" />
+      <End Role="Buy" EntitySet="Buy" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BuyTheProduct_Buy" Association="Self.FK_BuyTheProduct_Buy">
+      <End Role="Buy" EntitySet="Buy" />
+      <End Role="BuyTheProduct" EntitySet="BuyTheProduct" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BuyTheProduct_Product" Association="Self.FK_BuyTheProduct_Product">
+      <End Role="Product" EntitySet="Product" />
+      <End Role="BuyTheProduct" EntitySet="BuyTheProduct" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CategoriesEntities_CategoriesEntities" Association="Self.FK_CategoriesEntities_CategoriesEntities">
+      <End Role="CategoriesEntities" EntitySet="CategoriesEntities" />
+      <End Role="CategoriesEntities1" EntitySet="CategoriesEntities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CategoriesFeatures_CategoriesFeatures1" Association="Self.FK_CategoriesFeatures_CategoriesFeatures1">
+      <End Role="CategoriesFeatures" EntitySet="CategoriesFeatures" />
+      <End Role="CategoriesFeatures1" EntitySet="CategoriesFeatures" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Company_CompanyCategory" Association="Self.FK_Company_CompanyCategory">
+      <End Role="CompanyCategory" EntitySet="CompanyCategory" />
+      <End Role="Company" EntitySet="Company" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CompanyCategory_CompanyCategory" Association="Self.FK_CompanyCategory_CompanyCategory">
+      <End Role="CompanyCategory" EntitySet="CompanyCategory" />
+      <End Role="CompanyCategory1" EntitySet="CompanyCategory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Person_CategoriesEntities" Association="Self.FK_Person_CategoriesEntities">
+      <End Role="CategoriesEntities" EntitySet="CategoriesEntities" />
+      <End Role="Person" EntitySet="Person" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PhoneSupport_Company" Association="Self.FK_PhoneSupport_Company">
+      <End Role="Company" EntitySet="Company" />
+      <End Role="PhoneSupport" EntitySet="PhoneSupport" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_CategoriesFeatures" Association="Self.FK_Product_CategoriesFeatures">
+      <End Role="CategoriesFeatures" EntitySet="CategoriesFeatures" />
+      <End Role="Product" EntitySet="Product" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_Company" Association="Self.FK_Product_Company">
+      <End Role="Company" EntitySet="Company" />
+      <End Role="Product" EntitySet="Product" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_ProductCategory" Association="Self.FK_Product_ProductCategory">
+      <End Role="ProductCategory" EntitySet="ProductCategory" />
+      <End Role="Product" EntitySet="Product" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductCategory_ProductCategory" Association="Self.FK_ProductCategory_ProductCategory">
+      <End Role="ProductCategory" EntitySet="ProductCategory" />
+      <End Role="ProductCategory1" EntitySet="ProductCategory" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

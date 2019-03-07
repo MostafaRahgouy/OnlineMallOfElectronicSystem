@@ -1,0 +1,24 @@
+﻿@if (Request.IsAuthenticated) {
+    if( @Session["userlevel"].ToString() == "1")
+    {  
+        <text>     
+        Hello, @Html.ActionLink(@Session["username"].ToString(), "Index", "Admin", routeValues: null, htmlAttributes: new { style = "text-decoration:none; color:blue; font:bold; font-size:15px;", @class = "username", title = "Manage" }) Welcome!
+        </text>
+    }
+    else
+    {
+        <text>
+        Hello, @Html.ActionLink(@Session["username"].ToString(), "Manage", "Account", routeValues: null, htmlAttributes: new { style = "text-decoration:none; color:blue; font:bold; font-size:15px;", @class = "username", title = "Manage" }) Welcome!
+        </text>
+    }
+    <text>
+        @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm" })) {
+            <a href="javascript:document.getElementById('logoutForm').submit()">Log off</a>
+            }
+    </text>
+} else {
+    <ul>
+        <li>@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
+        <li>@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+    </ul>
+}

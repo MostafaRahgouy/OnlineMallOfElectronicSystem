@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "Admin";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/Content/Site.css" rel="stylesheet" />
+<h1>Administrator</h1>
+<table>
+    <tr>
+        <td>
+            <button onclick="location.href='@Url.Action("ListOfProducts", "Product")'" class="admin-blue-buttons"> Edit And List Of Products</button>
+        </td>
+        <td>
+            <button onclick="location.href='@Url.Action("ListOfCompanies", "Company")'" class="admin-blue-buttons"> Edit And List Of Companies</button>
+        </td>
+        <td>
+            <button onclick="location.href='@Url.Action("ListOfPhoneSupport", "PhoneSupport")'" class="admin-blue-buttons"> Edit And List Of Phone Supports</button>
+        </td>
+        <td>
+            <button onclick="location.href='@Url.Action("ListOfBuying", "Buy")'" class="admin-blue-buttons"> Edit And List Of Buyings</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="location.href='@Url.Action("AddingProduct", "Product")'" class="admin-blue-buttons"> Adding New Product</button>
+        </td>
+        <td>
+            <button onclick="location.href='@Url.Action("AddingCompany", "Company")'" class="admin-blue-buttons"> Adding New Company</button>
+        </td>
+        <td>
+            <button onclick="location.href='@Url.Action("AddingPhoneSupport", "PhoneSupport")'" class="admin-blue-buttons"> Adding New Phone Support</button>
+        </td>
+        <td>
+            <button onclick="location.href='@Url.Action("ListOfUsers", "Person")'" class="admin-blue-buttons"> Edit And List Of Persons</button>
+        </td>
+    </tr>
+</table>

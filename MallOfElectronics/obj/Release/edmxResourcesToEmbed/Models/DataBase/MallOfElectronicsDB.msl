@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MallOfElectronicsModelStoreContainer" CdmEntityContainer="MallOfElectronicsEntities">
+    <EntitySetMapping Name="BankCards">
+      <EntityTypeMapping TypeName="MallOfElectronicsModel.BankCard">
+        <MappingFragment StoreEntitySet="BankCard">
+          <ScalarProperty Name="SecondPassword" ColumnName="SecondPassword" />
+          <ScalarProperty Name="day" ColumnName="day" />
+          <ScalarProperty Name="month" ColumnName="month" />
+          <ScalarProperty Name="Cvv2" ColumnName="Cvv2" />
+          <ScalarProperty Name="CardNumber" ColumnName="CardNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Buys">
+      <EntityTypeMapping TypeName="MallOfElectronicsModel.Buy">
+        <MappingFragment StoreEntitySet="Buy">
+          <ScalarProperty Name="CardNumber" ColumnName="CardNumber" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Month" ColumnName="Month" />
+          <ScalarProperty Name="Day" ColumnName="Day" />
+          <ScalarProperty Name="TrackingCode" ColumnName="TrackingCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CategoriesEntities">
+      <EntityTypeMapping TypeName="MallOfElectronicsModel.CategoriesEntity">
+        <MappingFragment StoreEntitySet="CategoriesEntities">
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CategoriesFeatures">
+      <EntityTypeMapping TypeName="MallOfElectronicsModel.CategoriesFeature">
+        <MappingFragment StoreEntitySet="CategoriesFeatures">
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Companies">
+      <EntityTypeMapping TypeName="MallOfElectronicsModel.Company">
+        <MappingFragment StoreEntitySet="Company">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="CompanyIDCategories" ColumnName="CompanyIDCategories" />
+          <ScalarProperty Name="CompanyType" ColumnName="CompanyType" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CompanyCategories">
+      <EntityTypeMapping TypeName="MallOfElectronicsModel.CompanyCategory">
+        <MappingFragment StoreEntitySet="CompanyCategory">
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="People">
+      <EntityTypeMapping TypeName="MallOfElectronicsModel.Person">
+        <MappingFragment StoreEntitySet="Person">
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="IdOfTheCategoryOfPersons" ColumnName="IdOfTheCategoryOfPersons" />
+          <ScalarProperty Name="RegisteryDate" ColumnName="RegisteryDate" />
+          <ScalarProperty Name="Sex" ColumnName="Sex" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PhoneSupports">
+      <EntityTypeMapping TypeName="MallOfElectronicsModel.PhoneSupport">
+        <MappingFragment StoreEntitySet="PhoneSupport">
+          <ScalarProperty Name="PhoneSupport1" ColumnName="PhoneSupport" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="MallOfElectronicsModel.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="IdOfCategoryFeatures" ColumnName="IdOfCategoryFeatures" />
+          <ScalarProperty Name="PrecisionCamera" ColumnName="PrecisionCamera" />
+          <ScalarProperty Name="Brand" ColumnName="Brand" />
+          <ScalarProperty Name="MemorySize" ColumnName="MemorySize" />
+          <ScalarProperty Name="ScreenSize" ColumnName="ScreenSize" />
+          <ScalarProperty Name="ProductType" ColumnName="ProductType" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="ProductIDCategories" ColumnName="ProductIDCategories" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="Count" ColumnName="Count" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductCategories">
+      <EntityTypeMapping TypeName="MallOfElectronicsModel.ProductCategory">
+        <MappingFragment StoreEntitySet="ProductCategory">
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="BuyTheProduct" TypeName="MallOfElectronicsModel.BuyTheProduct" StoreEntitySet="BuyTheProduct">
+      <EndProperty Name="Product">
+        <ScalarProperty Name="Id" ColumnName="ProductId" />
+      </EndProperty>
+      <EndProperty Name="Buy">
+        <ScalarProperty Name="TrackingCode" ColumnName="TrackingCode" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

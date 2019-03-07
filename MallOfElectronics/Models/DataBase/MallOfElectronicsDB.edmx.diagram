@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="901ffba996e34206a3c2f681db3156df" Name="Diagram1" ZoomLevel="114">
+        <EntityTypeShape EntityType="MallOfElectronicsModel.BankCard" Width="1.5" PointX="0.75" PointY="2.625" />
+        <EntityTypeShape EntityType="MallOfElectronicsModel.Buy" Width="1.5" PointX="3" PointY="2.125" />
+        <EntityTypeShape EntityType="MallOfElectronicsModel.CategoriesEntity" Width="1.5" PointX="1.5" PointY="11.375" />
+        <EntityTypeShape EntityType="MallOfElectronicsModel.CategoriesFeature" Width="1.5" PointX="3" PointY="6.375" />
+        <EntityTypeShape EntityType="MallOfElectronicsModel.Company" Width="1.5" PointX="3" PointY="17.25" />
+        <EntityTypeShape EntityType="MallOfElectronicsModel.CompanyCategory" Width="1.5" PointX="0.75" PointY="17.5" />
+        <EntityTypeShape EntityType="MallOfElectronicsModel.Person" Width="1.5" PointX="0.75" PointY="7" />
+        <EntityTypeShape EntityType="MallOfElectronicsModel.PhoneSupport" Width="1.5" PointX="5.25" PointY="17.75" />
+        <EntityTypeShape EntityType="MallOfElectronicsModel.Product" Width="1.5" PointX="5.25" PointY="1.125" />
+        <EntityTypeShape EntityType="MallOfElectronicsModel.ProductCategory" Width="1.5" PointX="3" PointY="14.375" />
+        <AssociationConnector Association="MallOfElectronicsModel.FK_Buy_BankCard" />
+        <AssociationConnector Association="MallOfElectronicsModel.FK_Buy_Person" />
+        <AssociationConnector Association="MallOfElectronicsModel.FK_CategoriesEntities_CategoriesEntities" />
+        <AssociationConnector Association="MallOfElectronicsModel.FK_Person_CategoriesEntities" />
+        <AssociationConnector Association="MallOfElectronicsModel.FK_CategoriesFeatures_CategoriesFeatures1" />
+        <AssociationConnector Association="MallOfElectronicsModel.FK_Product_CategoriesFeatures" />
+        <AssociationConnector Association="MallOfElectronicsModel.FK_Company_CompanyCategory" />
+        <AssociationConnector Association="MallOfElectronicsModel.FK_PhoneSupport_Company" />
+        <AssociationConnector Association="MallOfElectronicsModel.FK_Product_Company" />
+        <AssociationConnector Association="MallOfElectronicsModel.FK_CompanyCategory_CompanyCategory" />
+        <AssociationConnector Association="MallOfElectronicsModel.FK_Product_ProductCategory" />
+        <AssociationConnector Association="MallOfElectronicsModel.FK_ProductCategory_ProductCategory" />
+        <AssociationConnector Association="MallOfElectronicsModel.BuyTheProduct" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

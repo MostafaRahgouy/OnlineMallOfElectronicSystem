@@ -1,0 +1,40 @@
+﻿@model IEnumerable<MallOfElectronics.Models.DataBase.PhoneSupport>
+
+@{
+    ViewBag.Title = "List Of Phone Support";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/Content/Site.css" rel="stylesheet" />
+<h2 class="blue-color-text">List Of PhoneS upport</h2>
+
+<p>
+    <b>@Html.ActionLink("Adding Phone Support","AddingPhoneSupport","PhoneSupport")</b>
+</p>
+<table width="950" class="list-of-products-tabel">
+    <tr class="list-of-products-tabel-first-row">
+        <th>
+            @Html.DisplayNameFor(model => model.CompanyId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PhoneSupport1)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr class="list-of-products-tabel-instance">
+        <td>
+            @Html.DisplayFor(modelItem => item.CompanyId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PhoneSupport1)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "EditingPhoneSupport", "PhoneSupport", new {id=item.id} , null) 
+            @*@Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ })*@ 
+            @Html.ActionLink("Delete", "DeletingPhoneSupport", "PhoneSupport", new { id=item.id } , null)
+        </td>
+    </tr>
+}
+
+</table>

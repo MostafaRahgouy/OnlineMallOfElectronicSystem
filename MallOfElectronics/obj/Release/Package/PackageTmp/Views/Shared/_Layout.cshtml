@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - Mall Of Electronics</title>
+    <link href="~/Content/icon.jpg" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    <script src="~/Scripts/jquery-1.8.2.min.js"></script>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <script>
+        $(document).ready(function () {
+            $("#flip").click(function () {
+                $("#panel").slideToggle("show");
+            });
+        });
+        $(document).ready(function () {
+            $("#SearchByTopics-flip").click(function () {
+                $("#SearchByTopics-panel").slideToggle("show");
+            });
+        }); 
+        $(document).ready(function () {
+            $("#SearchByColors-flip").click(function () {
+                $("#SearchByColors-panel").slideToggle("show");
+            });
+        });
+        $(document).ready(function () {
+            $("#SearchByCompanies-flip").click(function () {
+                $("#SearchByCompanies-panel").slideToggle("show");
+            });
+        });
+        $(document).ready(function () {
+            $("#SearchByProducts-flip").click(function () {
+                $("#SearchByProducts-panel").slideToggle("show");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div style="text-align:center; color:blue;">HI Welcome To This Website ,This Website Not Real Mall Of Electornics , Just A Student Project Taht We Work On It And Still We Work On It</div>
+    <div style="text-align:center; color:blue;">If You Have Any Idea To Help Us Please @Html.ActionLink("Contact" , "Contact" , "Home") With Us</div>
+    <div class="header-black-line"></div>
+    <header>
+        <div class="content-wrapper" style="margin-left:280px;">
+            <div class="float-left">
+                <table>
+                    <tr>
+                        <td>
+                            <img src="~/Content/icon.jpg" height="80" width="150" />
+                        </td>
+                        <td>
+                            <p class="site-title">@Html.ActionLink("Mall Of Electronics", "Index", "Home")</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="float-right">
+                <section id="login">
+                    @Html.Partial("_LoginPartial")
+                </section>
+                <nav>
+
+                    <ul id="menu">
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                        <li>@Html.ActionLink("About", "About", "Home")</li>
+                        <li><img src="~/Content/searchBar.png" height="20" width="40" id="flip" /></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div id="body">
+        @****************************************search bar**********************************************************************@
+        <div id="panel" class="search-section-first-div">
+            <table class="content-wrapper search-border-bottom-blue-color" style="margin-left:200px;">
+                <tr>
+
+                    @using (Html.BeginForm("Search", "Search", FormMethod.Get))
+                    {
+                        <td>
+                            <input type="text" placeholder="  What can we help you to find?" name="searchTopice" id="topic" class="search-bar-style" />
+                        </td>
+                        <td>
+                            <input type="submit" value="Search" id="btnSearch"
+                                   style=" color:white;background-color: #186fb1;font-family: 'Comic Sans MS';font-size: 20px;width: 200px;height: 60px;" />
+                        </td>
+                    }
+                </tr>
+            </table>
+        </div>
+        @****************************************search bar**********************************************************************@
+        <table width="1160">
+            <tr>
+                <td></td>
+                <th style="float:left;" width="240">
+                    <div style="margin-top: 32px;">
+                        <table width="240" style="background-color: white;">
+                            <tr>
+                                <td>
+                                    <p id="SearchByTopics-flip"><img src="~/Content/searchBar.png" height="15" width="30" />Search By Topics</p>
+                                    @using (Html.BeginForm("SearchByTopics", "Search", FormMethod.Get))
+                                    {
+                                        <ul id="SearchByTopics-panel" @*style="display:none;"*@>
+                                            <p id="SearchByProducts-flip"> Products</p>
+                                            <ul id="SearchByProducts-panel" style="display:none;">
+                                                <p>@Html.CheckBox("Mobile", false) Mobile</p>
+                                                <p>@Html.CheckBox("Laptop", false) Laptop</p>
+                                                <p>@Html.CheckBox("Tablet", false) Tablet</p>
+                                                <p>@Html.CheckBox("Camera", false) Camera</p>
+                                                <p>@Html.CheckBox("VideoCamera", false) Video Camera</p>
+                                            </ul>
+
+                                            <p id="SearchByCompanies-flip"> Companies</p>
+                                            <ul id="SearchByCompanies-panel" style="display:none;">
+                                                <p>@Html.CheckBox("Apple", false) Apple</p>
+                                                <p>@Html.CheckBox("Sony", false) Sony</p>
+                                                <p>@Html.CheckBox("Canon", false) Canon</p>
+                                            </ul>
+
+                                            <p id="SearchByColors-flip"> Colors</p>
+                                            <ul id="SearchByColors-panel" style="display:none;">
+                                                <p>@Html.CheckBox("Black", false) Black</p>
+                                                <p>@Html.CheckBox("Blue", false) Blue</p>
+                                                <p>@Html.CheckBox("Red", false) Red</p>
+                                            </ul>
+                                            <input type="submit" value="Search" 
+                                                   style="color:white;background-color: #186fb1;font-family: 'Comic Sans MS';font-size: 15px;width: 150px;height: 50px;" />
+                                        </ul>
+                                    }
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </th>
+                <td width="960">
+                    @RenderSection("featured", required: false)
+                    <section style="" class="content-wrapper main-content clear-fix">
+                        @RenderBody()
+                    </section>
+                </td>
+            </tr>
+        </table>
+        @*@RenderSection("featured", required: false)
+            <section style="" class="content-wrapper main-content clear-fix">
+                @RenderBody()
+            </section>*@
+    </div>
+
+    <footer>
+        <div class="content-wrapper" style="margin-left:280px;">
+            <div class="float-left">
+                <img src="~/Content/icon.jpg" height="200" width="230" />
+                <p style="text-align:center">@DateTime.Now.Year</p>
+                <p style="text-align:center">Electronices  Shopping  Center</p>
+                <p style="text-align:center">&copy; All Right Reciverd </p>
+            </div>
+            <div class="float-right blue-border">
+                <nav>
+                    <ul id="menu">
+                        <li>@Html.ActionLink("Mobile Products", "Product", "Product", new { productType = 1, titleLink = "Mobile Products" }, new { style = "text-decoration:none; color:black;  font:bold;" })</li>
+                        <li>@Html.ActionLink("Laptop Products", "Product", "Product", new { productType = 2, titleLink = "Laptop Products" }, new { style = "text-decoration:none; color:black;  font:bold;" })</li>
+                        <li>@Html.ActionLink("Tablet Products", "Product", "Product", new { productType = 3, titleLink = "Tablet Products" }, new { style = "text-decoration:none; color:black;  font:bold;" })</li>
+                        <li>@Html.ActionLink("Camera Products", "Product", "Product", new { productType = 4, titleLink = "Camera Products" }, new { style = "text-decoration:none; color:black;  font:bold;" })</li>
+                        <li>@Html.ActionLink("Video Camera Products", "Product", "Product", new { productType = 5, titleLink = "Video Camera Products" }, new { style = "text-decoration:none; color:black; font:bold;" })</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>

@@ -1,0 +1,172 @@
+﻿@{
+    ViewBag.Title = "Home";
+    MallOfElectronics.Models.Repository.ProductsRepository product = new MallOfElectronics.Models.Repository.ProductsRepository();
+    List<MallOfElectronics.Models.DataBase.Product> products = new List<MallOfElectronics.Models.DataBase.Product>();
+    products = product.select().ToList();
+    MallOfElectronics.Models.Repository.CompanyRepository company = new MallOfElectronics.Models.Repository.CompanyRepository();
+}
+@**************************************slider******************************************************@
+<link href="~/Content/themes/SliderTheme/js-image-slider.css" rel="stylesheet" type="text/css" />
+<script src="~/Content/themes/SliderTheme/js-image-slider.js" type="text/javascript"></script>
+<link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+<meta charset="utf-8">
+<div class="products-title-products-page">
+    <b style="color: black; font-size: large; font: bold;">We Offer You To Watch This Products</b>
+</div>
+<br />
+<br />
+<div id="sliderFrame">
+    <div id="slider">
+        <img src="~/Images/SliderImages/slider-1.jpg" />
+        <img src="~/Images/SliderImages/slider-2.jpg" />
+        <img src="~/Images/SliderImages/slider-3.jpg" />
+        <img src="~/Images/SliderImages/slider-4.jpg" />
+        <img src="~/Images/SliderImages/slider-5.jpg" />
+    </div>
+    <div style="clear:both;height:0;"></div>
+</div>
+@*************************************Mobile Products***********************************************@
+<div class="products-title-products-page">
+    <b>@Html.ActionLink("Mobile Products", "Product", "Product", new { productType = 1, titleLink = "Mobile Products"}, new { style = "text-decoration:none; color:black; font-size:large; font:bold;" })</b>
+</div>
+<table>
+    <tr>
+        @for (int i = 1, item = 0; (i <= 4) && (item < products.Count); item++)
+        {
+            if (products[item].ProductType == 1)
+            {
+                <td id="sliderFrame" style="border: 1px solid #b3a2a2;">
+                    <b>
+                        @{
+                            string productsFullName = @company.Find(products[item].CompanyId).Name + " "
+                                                      + @products[item].Name + " "
+                                                      + @products[item].Price + " $";
+                        }
+                        <img src="~/@products[item].Image" width="200" height="150" />
+                     
+                        @Html.ActionLink(productsFullName, "DisplayProductDetails", "Product",
+                                  new { productId = products[item].Id },
+                                     new { style = "text-decoration:none; background-color:transparent;" })
+                    </b>
+                </td>
+                i++;
+            }
+        }
+    </tr>
+</table>
+@*************************************Laptop Products***********************************************@
+<div class="products-title-products-page">
+    <b>@Html.ActionLink("Laptop Products", "Product", "Product", new { productType = 2, titleLink = "Laptop Products" }, new { style = "text-decoration:none; color:black; font-size:large; font:bold;" })</b>
+</div>
+<table>
+    <tr>
+        @for (int i = 1, item = 0; (i <= 4) && (item < products.Count); item++)
+        {
+            if (products[item].ProductType == 2)
+            {
+                <td id="sliderFrame" style="border: 1px solid #b3a2a2;">
+                    <b>
+                        @{
+                              string productsFullName = @company.Find(products[item].CompanyId).Name + " "
+                                                        + @products[item].Name + " "
+                                                        + @products[item].Price + " $";
+                        }
+                        <img src="~/@products[item].Image" width="200" height="150" />
+                        @Html.ActionLink(productsFullName, "DisplayProductDetails", "Product",
+                                     new { productId = products[item].Id },
+                                     new { style = "text-decoration:none; background-color:transparent;" })
+                    </b>
+                </td>
+                i++;
+            }
+        }
+    </tr>
+</table>
+@*************************************Tablet Products***********************************************@
+<div class="products-title-products-page">
+    <b>@Html.ActionLink("Tablet Products", "Product", "Product", new { productType = 3, titleLink = "Tablet Products" }, new { style = "text-decoration:none; color:black; font-size:large; font:bold;" })</b>
+</div>
+<table>
+    <tr>
+        @for (int i = 1, item = 0; (i <= 4) && (item < products.Count); item++)
+        {
+            if (products[item].ProductType == 3)
+            {
+                <td id="sliderFrame" style="border: 1px solid #b3a2a2;">
+                    <b>
+                        @{
+                string productsFullName = @company.Find(products[item].CompanyId).Name + " "
+                                          + @products[item].Name + " "
+                                          + @products[item].Price + " $";
+                        }
+                        <img src="~/@products[item].Image" width="200" height="150" />
+                        @Html.ActionLink(productsFullName, "DisplayProductDetails", "Product",
+                                     new { productId = products[item].Id },
+                                     new { style = "text-decoration:none; background-color:transparent;" })
+                    </b>
+                </td>
+                i++;
+            }
+        }
+    </tr>
+</table>
+@*************************************Camera Products***********************************************@
+<div class="products-title-products-page">
+    <b>@Html.ActionLink("Camera Products", "Product", "Product", new { productType = 4, titleLink = "Camera Products" }, new { style = "text-decoration:none; color:black; font-size:large; font:bold;" })</b>
+</div>
+<table>
+    <tr>
+        @for (int i = 1, item = 0; (i <= 4) && (item < products.Count); item++)
+        {
+            if (products[item].ProductType == 4)
+            {
+                <td id="sliderFrame" style="border: 1px solid #b3a2a2;">
+                    <b>
+                        @{
+                string productsFullName = @company.Find(products[item].CompanyId).Name + " "
+                                          + @products[item].Name + " "
+                                          + @products[item].Price + " $";
+                        }
+                        <img src="~/@products[item].Image" width="200" height="150" />
+                        @Html.ActionLink(productsFullName, "DisplayProductDetails", "Product",
+                                     new { productId = products[item].Id },
+                                     new { style = "text-decoration:none; background-color:transparent;" })
+                    </b>
+                </td>
+                i++;
+            }
+        }
+    </tr>
+</table>
+@*************************************Video Camera Products*****************************************@
+<div class="products-title-products-page">
+    <b>@Html.ActionLink("Video Camera Products", "Product", "Product", new { productType = 5, titleLink = "Video Camera Products" }, new { style = "text-decoration:none; color:black; font-size:large; font:bold;" })</b>
+</div>
+<table>
+    <tr>
+        @for (int i = 1, item = 0; (i <= 4) && (item < products.Count); item++)
+        {
+            if (products[item].ProductType == 5)
+            {
+                <td id="sliderFrame" style="border: 1px solid #b3a2a2;">
+                    <b>
+                        @{
+                string productsFullName = @company.Find(products[item].CompanyId).Name + " "
+                                          + @products[item].Name + " "
+                                          + @products[item].Price + " $";
+                        }
+                        <img src="~/@products[item].Image" width="200" height="150" />
+                        @Html.ActionLink(productsFullName, "DisplayProductDetails", "Product",
+                                     new { productId = products[item].Id },
+                                     new { style = "text-decoration:none; background-color:transparent;" })
+                    </b>
+                </td>
+                i++;
+            }
+        }
+    </tr>
+</table>
+@***************************************************************************************************@
+<div class="products-title-products-page">
+</div>
+@*********************************************finish************************************************@

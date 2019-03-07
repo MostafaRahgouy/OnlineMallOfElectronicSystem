@@ -1,0 +1,59 @@
+﻿@model MallOfElectronics.Models.DataBase.Company
+
+@{
+    ViewBag.Title = "Deleting Company";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/Content/Site.css" rel="stylesheet" />
+<h1 class="blue-color-text">Deleting Company</h1>
+
+<h2>Are you sure you want to delete this?</h2>
+<h2 style="color:green;">@ViewBag.message</h2>
+<h2 style="color:red;">@ViewBag.ErrorMessage</h2>
+
+<table width="950" class="list-of-products-tabel">
+    <tr class="list-of-products-tabel-first-row">
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CompanyType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CompanyIDCategories)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+    </tr>
+    <tr>
+        <td class="list-of-products-tabel-instance">
+            @Html.DisplayFor(model => model.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.CompanyType)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.CompanyIDCategories)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.Description)
+        </td>
+    </tr>
+</table>
+@using (Html.BeginForm("DeletingCompany", "Company", FormMethod.Post))
+{
+    @*@Html.AntiForgeryToken()*@
+    <p>
+        <input type="submit" value="Delete"  style="color: white; background-color: #186fb1; font-size: 20px; width: 150px; height: 50px;"/>
+        <b>@Html.ActionLink("Back to List", "ListOfCompanies", "Company", new { style = "font-size:20px;" })</b>
+    </p>
+}
+

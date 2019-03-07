@@ -1,0 +1,70 @@
+﻿@model MallOfElectronics.Models.DataBase.Company
+
+@{
+    ViewBag.Title = "Editing Company";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 class="blue-color-text">Editing Company</h1>
+<h2 style="color:green"> @ViewBag.message</h2>
+<h2 style="color:red"> @ViewBag.ErrorMessage</h2>
+
+@using (Html.BeginForm()) {
+    @*@Html.AntiForgeryToken()*@
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Company</legend>
+
+        @Html.HiddenFor(model => model.Id)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Name)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Name)
+            @Html.ValidationMessageFor(model => model.Name)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Email)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Email)
+            @Html.ValidationMessageFor(model => model.Email)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CompanyType)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CompanyType)
+            @Html.ValidationMessageFor(model => model.CompanyType)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CompanyIDCategories)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CompanyIDCategories)
+            @Html.ValidationMessageFor(model => model.CompanyIDCategories)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Description)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Description)
+            @Html.ValidationMessageFor(model => model.Description)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" style="color: white; background-color: #186fb1; font-size: 20px; width: 150px; height: 50px;" />
+            <b>@Html.ActionLink("Back to List", "ListOfCompanies", "Company", new { style = "font-size:20px;" })</b>
+        </p>
+    </fieldset>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

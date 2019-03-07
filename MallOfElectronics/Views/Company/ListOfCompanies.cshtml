@@ -1,0 +1,58 @@
+﻿@model IEnumerable<MallOfElectronics.Models.DataBase.Company>
+
+@{
+    ViewBag.Title = "List Of Companies";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="blue-color-text">List Of Companies</h2>
+
+<p>
+    <b>@Html.ActionLink("Adding New Company","AddingCompany", "Company")</b>
+</p>
+<table width="950" border="5" class="list-of-products-tabel">
+    <tr class="list-of-products-tabel-first-row">
+        <th width="140">
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th width="140">
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th width="140">
+            @Html.DisplayNameFor(model => model.CompanyType)
+        </th>
+        <th width="140">
+            @Html.DisplayNameFor(model => model.CompanyIDCategories)
+        </th>
+        <th width="200">
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr class="list-of-products-tabel-instance">
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CompanyType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CompanyIDCategories)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "EditingCompany", "Company", new { id = item.Id }, null) 
+            @*@Html.ActionLink("Details", "Details","Company", new { id=item.Id } , null)*@ 
+            @Html.ActionLink("Delete", "DeletingCompany", "Company", new { id = item.Id }, null)
+        </td>
+    </tr>
+}
+
+</table>

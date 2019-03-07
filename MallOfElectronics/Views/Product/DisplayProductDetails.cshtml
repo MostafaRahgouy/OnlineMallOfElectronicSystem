@@ -1,0 +1,139 @@
+﻿@model MallOfElectronics.Models.DataBase.Product
+@{
+    ViewBag.Title = ViewBag.companyName + " " + Model.Name;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/Content/Site.css" rel="stylesheet" />
+<link href="~/Content/themes/SliderTheme/js-image-slider.css" rel="stylesheet" />
+@**********************************picture and left side details*************************@
+<hr />
+<table class="details-tabel-styles">
+    <tr>
+        <td>
+            <img src="~/@Model.Image" alt="@Model.Name" width="500" height="300" />
+        </td>
+        <td>
+            <h1>@ViewBag.companyName   @Model.Name</h1>
+            <table>
+                <tr>
+                    <td>
+                        <h4> Company Name :</h4>
+                    </td>
+                    <td>
+                        <h3> @ViewBag.companyName</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h4> Model :</h4>
+                    </td>
+                    <td>
+                        <h3> @Model.Name </h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h4> Brand : </h4>
+                    </td>
+                    <td>
+                        <h3> @Model.Brand</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h4>Colors :  </h4>
+                    </td>
+                    <td>
+                        <h4 style="color:@Model.Color.ToUpper()"> @Model.Color </h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h4>Price : </h4>
+                    </td>
+                    <td>
+                        <h2> @Model.Price $ </h2>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+@**********************************screen size*******************************************@
+<div class="details-left-border-style">
+    <h3> Screen Size : </h3>
+</div>
+<div class="details-right-border-style">
+    <h3> @Model.ScreenSize  CM </h3>
+</div>
+@**********************************weight************************************************@
+<div class="details-left-border-style">
+    <h3> Weight : </h3>
+</div>
+<div class="details-right-border-style">
+    <h3> @Model.Weight  GR </h3>
+</div>
+@*********************************Camera Precision***************************************@
+<div class="details-left-border-style">
+    <h3> Camera Precision : </h3>
+</div>
+<div class="details-right-border-style">
+    <h3> @Model.PrecisionCamera </h3>
+</div>
+@******************************Description***********************************************@
+<div class="details-dicription-border">
+    <h3> Description : </h3>
+</div>
+<div class="details-dicription-text">
+    <p> @Model.Description </p>
+</div>
+@****************************************************************************************@
+@{
+    MallOfElectronics.Models.Repository.ProductsRepository product = new MallOfElectronics.Models.Repository.ProductsRepository();
+    List<MallOfElectronics.Models.DataBase.Product> products = new List<MallOfElectronics.Models.DataBase.Product>();
+    products = product.select().ToList();
+    MallOfElectronics.Models.Repository.CompanyRepository company = new MallOfElectronics.Models.Repository.CompanyRepository();
+}
+
+<div class="details-recomend">
+    <h3>We Recomend You To Watch This Products Too </h3>
+</div>
+
+<table>
+    <tr>
+        @for (int i = 1, item = 0; (i <= 4) && (item < products.Count); item++)
+        {
+            if (products[item].ProductType == Model.ProductType && (@company.Find(products[item].CompanyId).Name == ViewBag.companyName))
+            {
+                <td id="sliderFrame" style="border: 1px solid #b3a2a2;">
+                    <b>
+                        @{
+                string productsFullName = @company.Find(products[item].CompanyId).Name + " "
+                                          + @products[item].Name + " "
+                                          + @products[item].Price + " $";
+                        }
+                        <img src="~/@products[item].Image" width="200" height="150" />
+
+                        @Html.ActionLink(productsFullName, "DisplayProductDetails", "Product",
+                                  new { productId = products[item].Id },
+                                     new { style = "text-decoration:none; background-color:transparent;" })
+                    </b>
+                </td>
+                i++;
+            }
+            if ((i <= 4) && (item + 1) == products.Count)
+            {
+                for (int j = i; j <= 4; j++)
+                {
+                    <td id="sliderFrame" style=" border: 1px solid #b3a2a2;">
+                        <b>
+                            <img src="~/Images/ProductsImages/EmptyProductsImage.jpg" width="200" height="150" />
+                            @Html.ActionLink("NONE", "Index", "Home", null,
+                                  new { style = "text-align:center; text-decoration:none; background-color:transparent;" })
+                        </b>
+                    </td>
+                }
+            }
+        }
+    </tr>
+</table>

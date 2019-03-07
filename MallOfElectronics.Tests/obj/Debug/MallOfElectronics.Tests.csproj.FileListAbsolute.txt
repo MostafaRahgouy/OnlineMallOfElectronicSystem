@@ -1,0 +1,206 @@
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\MallOfElectronics.Tests.dll.config
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\MallOfElectronics.Tests.dll
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\MallOfElectronics.Tests.pdb
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\MallOfElectronics.dll
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\Microsoft.Data.Edm.dll
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\Microsoft.Data.OData.dll
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\Newtonsoft.Json.dll
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Net.Http.Formatting.dll
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Spatial.dll
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Web.Helpers.dll
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Web.Http.dll
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Web.Http.OData.dll
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Web.Http.WebHost.dll
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Web.Mvc.dll
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Web.Razor.dll
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Web.WebPages.dll
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\EntityFramework.dll
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Web.Optimization.dll
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\MallOfElectronics.pdb
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\Newtonsoft.Json.xml
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Net.Http.Formatting.xml
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Web.Helpers.xml
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Web.Http.xml
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Web.Http.WebHost.xml
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Web.Mvc.xml
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Web.Razor.xml
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Web.WebPages.xml
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Web.Http.OData.xml
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\Microsoft.Data.Edm.xml
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\Microsoft.Data.OData.xml
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Spatial.xml
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\EntityFramework.xml
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\de\Microsoft.Data.Edm.resources.dll
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\es\Microsoft.Data.Edm.resources.dll
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\fr\Microsoft.Data.Edm.resources.dll
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\it\Microsoft.Data.Edm.resources.dll
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\ja\Microsoft.Data.Edm.resources.dll
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\ko\Microsoft.Data.Edm.resources.dll
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\ru\Microsoft.Data.Edm.resources.dll
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\de\Microsoft.Data.OData.resources.dll
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\es\Microsoft.Data.OData.resources.dll
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\fr\Microsoft.Data.OData.resources.dll
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\it\Microsoft.Data.OData.resources.dll
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\ja\Microsoft.Data.OData.resources.dll
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\ko\Microsoft.Data.OData.resources.dll
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\ru\Microsoft.Data.OData.resources.dll
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\de\System.Spatial.resources.dll
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\es\System.Spatial.resources.dll
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\fr\System.Spatial.resources.dll
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\it\System.Spatial.resources.dll
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\ja\System.Spatial.resources.dll
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\ko\System.Spatial.resources.dll
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\ru\System.Spatial.resources.dll
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\zh-Hans\System.Spatial.resources.dll
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\zh-Hant\System.Spatial.resources.dll
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\obj\Debug\MallOfElectronics.Tests.csprojResolveAssemblyReference.cache
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\obj\Debug\MallOfElectronics.Tests.dll
+D:\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\obj\Debug\MallOfElectronics.Tests.pdb
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\MallOfElectronics.Tests.dll.config
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\MallOfElectronics.Tests.dll
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\MallOfElectronics.Tests.pdb
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\MallOfElectronics.dll
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\Microsoft.Data.Edm.dll
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\Microsoft.Data.OData.dll
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\Microsoft.Web.Mvc.FixedDisplayModes.dll
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\Newtonsoft.Json.dll
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Spatial.dll
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Web.Helpers.dll
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Web.Http.OData.dll
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Web.Mvc.dll
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Web.Razor.dll
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Web.WebPages.dll
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\EntityFramework.dll
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Web.Optimization.dll
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\Microsoft.Web.WebPages.OAuth.dll
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\DotNetOpenAuth.AspNet.dll
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\DotNetOpenAuth.Core.dll
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\DotNetOpenAuth.OAuth.Consumer.dll
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\DotNetOpenAuth.OAuth.dll
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\DotNetOpenAuth.OpenId.RelyingParty.dll
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\DotNetOpenAuth.OpenId.dll
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\MallOfElectronics.pdb
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\Newtonsoft.Json.xml
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Web.Helpers.xml
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Web.Mvc.xml
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Web.Razor.xml
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Web.WebPages.xml
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Web.Http.OData.xml
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\Microsoft.Data.Edm.xml
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\Microsoft.Data.OData.xml
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Spatial.xml
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\EntityFramework.xml
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\Microsoft.Web.WebPages.OAuth.xml
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\DotNetOpenAuth.AspNet.xml
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\DotNetOpenAuth.Core.xml
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\DotNetOpenAuth.OAuth.Consumer.xml
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\DotNetOpenAuth.OAuth.xml
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\DotNetOpenAuth.OpenId.RelyingParty.xml
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\DotNetOpenAuth.OpenId.xml
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\de\Microsoft.Data.Edm.resources.dll
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\es\Microsoft.Data.Edm.resources.dll
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\fr\Microsoft.Data.Edm.resources.dll
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\it\Microsoft.Data.Edm.resources.dll
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\ja\Microsoft.Data.Edm.resources.dll
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\ko\Microsoft.Data.Edm.resources.dll
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\ru\Microsoft.Data.Edm.resources.dll
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\zh-Hans\Microsoft.Data.Edm.resources.dll
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\zh-Hant\Microsoft.Data.Edm.resources.dll
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\de\Microsoft.Data.OData.resources.dll
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\es\Microsoft.Data.OData.resources.dll
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\fr\Microsoft.Data.OData.resources.dll
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\it\Microsoft.Data.OData.resources.dll
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\ja\Microsoft.Data.OData.resources.dll
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\ko\Microsoft.Data.OData.resources.dll
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\ru\Microsoft.Data.OData.resources.dll
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\zh-Hans\Microsoft.Data.OData.resources.dll
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\zh-Hant\Microsoft.Data.OData.resources.dll
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\de\System.Spatial.resources.dll
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\es\System.Spatial.resources.dll
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\fr\System.Spatial.resources.dll
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\it\System.Spatial.resources.dll
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\ja\System.Spatial.resources.dll
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\ko\System.Spatial.resources.dll
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\ru\System.Spatial.resources.dll
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\zh-Hans\System.Spatial.resources.dll
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\zh-Hant\System.Spatial.resources.dll
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\obj\Debug\MallOfElectronics.Tests.csprojResolveAssemblyReference.cache
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\obj\Debug\MallOfElectronics.Tests.dll
+\\WOLF\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\obj\Debug\MallOfElectronics.Tests.pdb
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\MallOfElectronics.Tests.dll.config
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\MallOfElectronics.Tests.dll
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\MallOfElectronics.Tests.pdb
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\MallOfElectronics.dll
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\Microsoft.Data.Edm.dll
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\Microsoft.Data.OData.dll
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\Microsoft.Web.Mvc.FixedDisplayModes.dll
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\Newtonsoft.Json.dll
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Spatial.dll
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Web.Helpers.dll
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Web.Http.OData.dll
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Web.Mvc.dll
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Web.Razor.dll
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Web.WebPages.dll
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\EntityFramework.dll
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Web.Optimization.dll
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\MallOfElectronics.pdb
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\Newtonsoft.Json.xml
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Web.Helpers.xml
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Web.Mvc.xml
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Web.Razor.xml
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Web.WebPages.xml
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Web.Http.OData.xml
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\Microsoft.Data.Edm.xml
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\Microsoft.Data.OData.xml
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\System.Spatial.xml
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\EntityFramework.xml
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\de\Microsoft.Data.Edm.resources.dll
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\es\Microsoft.Data.Edm.resources.dll
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\fr\Microsoft.Data.Edm.resources.dll
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\it\Microsoft.Data.Edm.resources.dll
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\ja\Microsoft.Data.Edm.resources.dll
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\ko\Microsoft.Data.Edm.resources.dll
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\ru\Microsoft.Data.Edm.resources.dll
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\zh-Hans\Microsoft.Data.Edm.resources.dll
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\zh-Hant\Microsoft.Data.Edm.resources.dll
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\de\Microsoft.Data.OData.resources.dll
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\es\Microsoft.Data.OData.resources.dll
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\fr\Microsoft.Data.OData.resources.dll
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\it\Microsoft.Data.OData.resources.dll
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\ja\Microsoft.Data.OData.resources.dll
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\ko\Microsoft.Data.OData.resources.dll
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\ru\Microsoft.Data.OData.resources.dll
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\zh-Hans\Microsoft.Data.OData.resources.dll
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\zh-Hant\Microsoft.Data.OData.resources.dll
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\de\System.Spatial.resources.dll
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\es\System.Spatial.resources.dll
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\fr\System.Spatial.resources.dll
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\it\System.Spatial.resources.dll
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\ja\System.Spatial.resources.dll
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\ko\System.Spatial.resources.dll
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\ru\System.Spatial.resources.dll
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\zh-Hans\System.Spatial.resources.dll
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\bin\Debug\zh-Hant\System.Spatial.resources.dll
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\obj\Debug\MallOfElectronics.Tests.csprojResolveAssemblyReference.cache
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\obj\Debug\MallOfElectronics.Tests.dll
+E:\0MY WORLD\WebSite Project\copy of project\Finnal\MallOfElectronics\MallOfElectronics\MallOfElectronics.Tests\obj\Debug\MallOfElectronics.Tests.pdb
